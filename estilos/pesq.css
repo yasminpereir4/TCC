@@ -1,0 +1,39 @@
+
+
+
+.container-main{
+  width: 500px;
+  background-color: rgba(124, 124, 124, 0.486);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 2vh;
+  box-shadow: 8px 7px 3px 0px rgba(0,0,0,0.1);
+}
+
+#fotopubli{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.separar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-main #descricao{
+  margin: 2vh 0;
+}
+
+#fotoperfil{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.perfilPublicacao{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}

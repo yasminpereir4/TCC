@@ -1,0 +1,33 @@
+.container-main-perfil {
+  display: flex;
+  padding: 10px;
+  margin-top: 15px;
+  justify-content: center;
+  border-radius: 8px;
+  width: 255px;
+  flex-direction: column;
+  background-color: #00000069;
+  max-height: 100%;
+}
+#fotopubli{
+  width: 235px;
+  height: 160px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.separar{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfilPublicacao{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-main-perfil #descricao{
+  margin: 1vh 0;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.tudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+ 
+}
+
+.container{
+  background-color: #d4d4d4ee;
+  border-radius: 15px;
+  margin-top: 5vw;
+  padding-left: 52px;
+  width: 500px;
+  box-shadow: 8px 7px 3px 0px rgba(0,0,0,0.1);
+}
+
+.cont{
+  
+  display: block;
+  position: relative; 
+}
+.botoes{
+  justify-content: center;
+  align-items: center;
+}
+
+.cont:hover input ~ .checkmark{
+  background-color: #eee;
+}
+
+.cont input:checked ~ .checkmark{
+  background-color: rgba(0, 0, 0, 0.933);
+}
+
+.cont .checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cont input:checked ~ .checkmark:after{
+  display: block;
+}
+
+input[type="checkbox"]{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 2px;  
+  margin-top: 5px;
+}
+
+h3{
+  font-size: 26px;
+  margin-left: 30px;
+}
+
+
+#btn-cad{
+  margin-bottom: 1vw;
+  background-color:#711ea8;
+   width: 200px;
+   cursor: pointer;
+   color: white;
+   margin-left: 90px;
+   font-size: 20px;
+   border:none;
+   border-radius: 25px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: uppercase;
+   position: block  ;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
+   text-decoration: none;
+}
+
+.scroll-up-btn a{
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 30px;
+  font-size: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn a:hover{
+  background-color: #260a2c;
+}

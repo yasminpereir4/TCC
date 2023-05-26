@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #dfdfdf;
+}
+
+::-webkit-scrollbar{
+  width: 18px;
+}
+::-webkit-scrollbar-track{
+  /* border-radius: 35px; */
+  background-color: #ffffff;
+}  
+::-webkit-scrollbar-thumb{
+  border-radius: 35px;
+  background-color: #620076;
+}
+
+.patroTitulo{
+  justify-content: space-between;
+  display: flex;
+  height: 10vh;
+}
+
+.patrocinador{
+  margin-top: 20px;
+  padding-top: 30px;
+  width: 100%;
+  box-shadow: 8px 7px 3px 0px rgba(0,0,0,0.1);
+  line-height: 1.7em;
+  color: #000000;
+  background-color: rgba(53, 0, 100, 0.202);
+}
+
+.title{
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.inicio{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.inicio2{
+  display: flex;
+  flex-direction: row;
+  
+  padding: 20px;
+}
+
+#name{
+  padding: 15px;
+  font-size: 50px;
+  color: rgba(54, 0, 100, 0.678);
+  letter-spacing: 2px;
+}
+
+.descricao{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.nomePatro, .descricao{
+  padding: 10px;
+}
+
+.logoPatro img{
+  border-radius: 15px;
+  width: 350px;
+  height: 300px;
+}
+
+#sec2{
+  background-color: #dfdfdf;
+  color: #000000;
+  box-shadow: none;
+  padding: 20px;
+}
+
+#desc2{
+  text-align: justify;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+#name2{
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  padding-left: 6px;
+  font-size: 40px;
+  color: rgba(54, 0, 100, 0.678);
+  letter-spacing: 2px;
+}
+
+@media(max-width: 950px){      
+  #name{
+    font-size: 32px;
+  }
+  #name2{
+    font-size: 32px;
+  }
+}
+
+@media (max-width:650px){
+  .descricao{
+    font-size: 18px;
+  }
+  #name{
+    font-size: 20px;
+  }
+  #name2{
+    font-size: 20px;
+  }
+  .logoPatro img{
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+.scroll-up-btn a{
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 30px;
+  font-size: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn a:hover{
+  background-color: #260a2c;
+}

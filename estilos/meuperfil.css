@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+  } 
+ 
+  ::-webkit-scrollbar{
+    width: 18px;
+}
+::-webkit-scrollbar-track{
+    /* border-radius: 35px; */
+    background-color: #ffffff;
+}  
+::-webkit-scrollbar-thumb{
+    border-radius: 35px;
+    background-color: #1c0022;
+}
+
+  body{
+    background-color: #;
+  }
+
+ .wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+ }
+
+.perfil{
+    border-radius: 15px;
+    display: flex;
+  }
+.meuperfil{
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  width: 730px;
+  flex-direction: column;
+  background-color: #f0f0f0e1;
+  max-height: 100%;
+  }
+
+
+  .bio{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .bio p{ 
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #000000;
+  }
+
+  .bio h1{ 
+   
+    font-weight: bolder;
+    color: #080808;
+  }
+  /*ICONE PARA VOLTAR*/
+
+.scroll-up-btn #back{
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 30px;
+  font-size: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn #back:hover{
+  background-color: #26002e;
+}
+
+#fotoperfil2{
+  width: 60px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#nomepubli2{
+  font-size : 18px;
+}
+
+#conteudo{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fotoPerfilGrande #fotoPerfilImg {
+  /* width: 5vw;
+  height: 10vh;
+  min-width: 80px; */
+  width: 205px;
+  height: 200px;
+  min-height: 80px;
+  border-radius: 100px;
+  border: 4px solid #a1a1a196;
+  object-fit: cover;
+  position: relative;
+}
+.fotoPerfilGrande{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.botoes button {
+  margin-top: 35px;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: center;
+  border-radius: 10px;
+  color: rgb(10, 10, 10);
+  background-color: transparent;
+  font-size: 25px;
+  width: 230px;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #a1a1a196;
+  padding: 15px;
+  border: 2px solid #ffffff !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+
+}
+.botoes button:hover{
+ color: #c300ff !important;
+ background-color: #ffffff;
+ border-radius: 50px;
+ border-color: #c300ff !important;
+ transition: all 0.3s ease 0s;
+
+}
+
+
+/* RESPONSIVIDADE */
+/* @media (max-width:1130px){
+
+ .botoes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 110px;
+  
+}} 
+
+@media (max-width:650px) {
+  body{
+    background-color: #d6d6d6;
+   }
+  .capa {
+    height: 25%;
+    width: 100%;
+    background-color: #2e0043;
+   
+  }.meuperfil img {
+      margin-top: -60px;
+  }
+   .botoes {
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  
+} 
+
+} */
+@media (max-width: 730px){
+  .meuperfil{
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+
+.dark-theme {
+  background-color: #0e0e0e;
+  color: #eee;
+}
+.checkbox {
+  display: none;
+}
+.switch {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 38px;
+  width: 90px;
+  margin-left: 25px;
+  /* Scale the size to your need */
+  transform: scale(0.7);
+}
+.switch .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.8px;
+  left: 9px;
+  height: 35px;
+  width: 35px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .switch .ball {
+  transform: translateX(54px);
+}
+#moon {
+  color: #f1c40f;
+}
+#sun {
+  margin-left: -12px;
+  color: #f39c12;
+}

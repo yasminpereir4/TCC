@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    width: 11px;
+}
+::-webkit-scrollbar-track{
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 35px;
+    background-color: #620076;
+}
+
+/*ICONE PARA VOLTAR*/
+
+
+.scroll-up-btn a{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: #620076;
+    border-radius: 30px;
+    font-size: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn a:hover{
+    background-color: #620076;
+}
+
+/*DIV PAI DO FORM*/
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+}
+
+/*IMAGEM*/
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+/*FORMULÁRIO*/
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    margin-right: 10px;
+}
+
+.form-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #620076;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/*DIV PAI DO INPUT-BOX*/
+
+.input-group {
+    display: block;
+    padding: 1.2rem 0;
+    justify-content: center;
+}
+h2{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+}
+
+/*INPUT*/
+
+.input-box input {
+    margin: 0.2rem 0;
+    padding: 0.8rem 2rem;
+    width: 22rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    margin-bottom: 1.4rem;
+}
+
+.input-box small{
+    font-size: 0.8rem;
+    display: flex;
+    margin-top: -15px;
+    margin-left: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.input-box small a{
+    text-decoration: none;
+    color:#711ea8;
+}
+
+.input-box input:hover {
+    background-color: rgb(245, 237, 248);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #711ea8;
+}
+
+.input-box label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    display: block;
+    padding: 0.5rem;
+}
+
+.input-box input::placeholder {
+    color: gray;
+}
+
+/*BOTÃO*/
+.input-field button {
+    width: 100%;
+    border: none;
+    background-color: #620076;
+    padding: 0.62rem;
+    padding-bottom: -0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: #fff;
+    transition: .4s;
+}
+
+.input-field button:hover {
+    background-color: #711ea8;
+    color: #fff;
+}
+
+/*LINK PARA CADASTRO*/
+.signup p{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+.signup p a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.signup p a:hover{
+    color: #620076;
+}
+
+/*ENTRAR COM O GOOGLE*/
+
+.signin-google{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    margin-bottom: 1rem;
+    background-color:  #cf9af1;
+    box-shadow: 2px 2px 2px gray;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.signin-google:hover{
+    background: #d3b6e6;
+    color: #620076;
+}
+
+.signin-google a i{
+    font-size: 1.2rem;
+    color:  #711ea8;
+    padding: 0.5rem;
+}
+
+.signin-google a{
+    color:#620076;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width:990px){
+    .form-image{
+        display: none;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .form{
+        width: 80%;
+    }
+    .input-group{
+        padding: 0.5rem;
+    }
+    .input-box input{
+        width: 15rem;
+    }.input-box label{
+        font-size: 0.8rem;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-field{
+        width: 15.5rem;
+    }.signin-google{
+        width: 15.5rem;
+    }
+}
+@media screen and (max-width: 1330px){
+    .form-image{
+        width: 50%;
+    }
+    .form-image img{
+        width: 25rem;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .input-group{
+        padding: 0.5rem;
+    }
+    .input-box input{
+        width: 22rem;
+    }.input-field{
+        width: 22rem;
+    }.signin-google{
+        width: 22rem;
+    }
+    ::-webkit-scrollbar{
+        width: 11px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: #620076;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:420px){
+    .container{
+        width: 80%;
+        height: auto;
+        box-shadow: none;
+    }.form-header{
+        padding-top: 0.8rem;
+    }
+    .input-group{
+        padding: 0.5rem;
+    }
+    .input-box label{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .input-box small{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .input-box input{
+        width: 15rem;
+        font-size: 1rem;
+        box-shadow: 1px 1px 6px #0000009f;
+    }.input-field{
+        width: 15rem;
+        margin-left: 0.3rem;
+        font-size: 0.8rem;
+    }.signin-google{
+        width: 15rem;
+        margin-left: 0.3rem;
+    }.scroll-up-btn a{
+        position: fixed;
+        width: 35px;
+        height: 35px;
+        right: 15px;
+        bottom: 25px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        background-color: #620076;
+        border-radius: 30px;
+        font-size: 20px;
+        z-index: 999;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }.scroll-up-btn a ion-icon{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.3rem;
+    }
+}
+
+

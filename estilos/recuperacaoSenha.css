@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*ICONE PARA VOLTAR*/
+
+.scroll-up-btn a{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: #620076;
+    border-radius: 30px;
+    font-size: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn a:hover{
+    background-color: #620076;
+}
+
+/*DIV PAI DO FORM*/
+.container {
+    width: 80%;
+    height: 95vh;
+    display: flex;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+}
+
+/*IMAGEM*/
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+/*FORMULÁRIO*/
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.form-header h1{
+    font-weight: 600;
+}
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #620076;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/*DIV PAI DO INPUT-BOX*/
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/*INPUT*/
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box small{
+    text-align: center;
+}
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    width: 22rem;
+}
+
+.input-box input:hover {
+    background-color: rgb(245, 237, 248);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #711ea8;
+}
+
+.input-box label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+/*BOTÃO*/
+input[type=submit] {
+    width: 22rem;
+    border: none;
+    background-color: #620076;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    color: #fff;
+    transition: .4s;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #711ea8;
+    color: #fff;
+}
+
+/*LINK PARA LOGIN*/
+.signin p{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+.signin p a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.signin p a:hover{
+    color: #620076;
+}
+
+/*RESPONSIVIDADE*/
+@media screen  and (max-width:990px){
+    .form-image{
+        display: none;
+    }
+    .container{
+        width: 50%;
+        box-shadow: none;
+    }
+    .form{
+        width: 100%;
+        flex-direction: column;
+    }
+    .input-group{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1198px){
+    .form-image{
+        width: 50%;
+    }.form-image{
+        width: 31rem;
+    }
+    .container{
+        width: 80%;
+        height: auto;
+    }
+    .form{
+        width: 100%;
+    }.input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+        width: 15rem;
+    }
+    .form-header{
+        font-size: 0.8rem;
+    }.form-header h1{
+        font-size: 2.2rem;
+    }::-webkit-scrollbar{
+        width: 11px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: #620076;
+    }#olho{
+        margin-left: 12.5rem;
+        height: 1.2rem;
+        width: 1.2rem;
+    }#olho2{
+        margin-left: 12.8rem;
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .form-image{
+        width: 50%;
+    }
+    .container{
+        width: 80%;
+        height: auto;
+    }
+    .form{
+        width: 100%;
+    }.input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+        width: 15rem;
+    }.input-field button{
+        width: 18rem;
+        margin-left: 6rem;
+    }.form-header h1{
+        font-size: 2.2rem;
+    }::-webkit-scrollbar{
+        width: 11px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: #620076;
+    }#olho{
+        margin-top: -6rem;
+        margin-left: 12.5rem;
+        height: 1.2rem;
+        width: 1.2rem;
+    }#olho2{
+        margin-top: -9rem;
+        margin-left: 12.5rem;
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+}
+@media screen and (min-width: 510px) and (max-width:770px){
+    .container{
+        width: 80%;
+        height: auto;
+    }
+    .input-group{
+        padding: 0.5rem;
+    }
+    .input-box{
+        width: 22rem;
+    }
+    input[type=submit]{
+        width: 22rem;
+        margin-left: 0.6rem;
+    }
+    ::-webkit-scrollbar{
+        width: 11px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: #620076;
+    }#olho{
+        margin-top: -6.2rem;
+        margin-left: 15rem;
+        height: 1rem;
+        width: 1rem;
+    }#olho2{
+        margin-top: -9.2rem;
+        margin-left: 15rem;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media screen and (min-width: 310px) and (max-width:510px){
+    .container{
+        width: 80%;
+        height: auto;
+        box-shadow: none;
+    }
+    .input-group{
+        padding: 0.5rem;
+    }
+    .input-box label{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .input-box small{
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .input-box input{
+        width: 18rem;
+        font-size: 1rem;
+    }input[type=submit]{
+        width: 18.2rem;
+        margin-left: 0.4rem;
+    }
+    .scroll-up-btn a{
+        position: fixed;
+        width: 35px;
+        height: 35px;
+        right: 15px;
+        bottom: 25px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        background-color: #620076;
+        border-radius: 30px;
+        font-size: 20px;
+        z-index: 999;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }.scroll-up-btn a ion-icon{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.3rem;
+    }::-webkit-scrollbar{
+        width: 11px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: #620076;
+    }#olho{
+        margin-top: -6.2rem;
+        margin-left: 15rem;
+        height: 1rem;
+        width: 1rem;
+    }#olho2{
+        margin-top: -9.2rem;
+        margin-left: 15rem;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media screen and (min-width:1330px) and (max-width:1580px){
+    .form-image{
+        width: 50%;
+    }
+    .form-image img{
+        width: 31rem;
+        height: auto;
+    }
+    .container{
+        width: 80%;
+        height: auto;
+    }
+    .form{
+        width: 100%;
+    }.input-group{
+        flex-direction: column;
+    }
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+        width: 15rem;
+    }input[type=submit]{
+        width: 22rem;
+    }
+    .form-header h1{
+        font-size: 2.2rem;
+    }::-webkit-scrollbar{
+        width: 11px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 35px;
+        background-color: #620076;
+    }#olho{
+        margin-top: -6.2rem;
+        margin-left: 12.5rem;
+        height: 1rem;
+        width: 1rem;
+    }#olho2{
+        margin-top: -9.2rem;
+        margin-left: 12.8rem;
+        height: 1rem;
+        width: 1rem;
+    }
+}
